@@ -1,0 +1,115 @@
+<!-- Portfolio Page -->
+  <div class="bg-light p-4 border border-dark" id="portPage">
+      <h3 class="border-bottom border-dark pb-1 mb-3 text-info">My Portfolio</h3>
+      <h3 class=" mb-2" id="portWebsitesBtn">Websites</h3>
+      <div class="row pl-3 pr-3">
+        {{#each projects}}
+        <div class="col-sm-6 col-md-4 col-lg-3 border" style="background-image: url(/images/IMG_1950.jpg); 200px: 400px; width: 400px;">
+          <p>{{title}}</p>
+          <p>{{projectType}}</p>
+          <p>{{image}}</p>
+          <p>{{githubLink}}</p>
+          <p>{{liveSiteLink}}</p>
+        </div>
+        {{/each}}
+      </div>
+      <h3 class=" mb-2 text-dark" id="portWebBtn">Web Apps</h3>
+      <div class="row pl-3 pr-4" id="webRow" data-state= "shown">  
+          <div class="col-sm-4 col-md-3 p-0 border">
+              <div class="bg-white  p-1">
+                  <h5 class="text-success gloria">Satellite Search</h5>
+                  <img src="/images/screenshots/SatelliteSearch.png" alt="">
+                  <a href="https://github.com/SunshineDaydeam/GroupProject" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                  <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/GroupProject/" class="text-white" target="_blank">Go To Site</a></h6>
+              </div>
+          </div>
+          <div class="col-sm-4 col-md-3 p-0 border">  
+              <div class="bg-white p-1">
+                  <h5 class="text-success gloria">Search Engine</h5>
+                  <img src="/images/screenshots/GifSearch.png" alt="">
+                  <a href="https://github.com/SunshineDaydeam/Search-Engine" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                  <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/Search-Engine/index.html" class="text-white" target="_blank">Go To Site</a></h6>
+              </div>
+          </div>
+          <div class="col-sm-4 col-md-3 p-0 border">
+              <div class="bg-white  p-1">
+                  <h5 class="text-success gloria">Train Database</h5>
+                  <img src="/images/screenshots/TrainTime.png" alt="">
+                  <a href="https://github.com/SunshineDaydeam/train-time" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                  <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/train-time/" class="text-white" target="_blank">Go To Site</a></h6>
+              </div>
+          </div>
+          <div class="col-sm-4 col-md-3 p-0">
+              <div class="bg-white p-1">
+                  <h5 class="text-success gloria">Liri App</h5>
+                  <a href="https://github.com/SunshineDaydeam/liri" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                  <h6 class="btn btn-primary text-center"><a href="https://github.com/SunshineDaydeam/Liri" class="text-white" target="_blank">Go To Site</a></h6>
+              </div>
+          </div>
+          <div class="col-sm-4 col-md-3 p-0">
+              <div class="bg-white p-1">
+                  <h5 class="text-success gloria">Bamazon IMS</h5>
+                  <img src="/images/screenshots/DogAndMe1.jpg" alt="">
+                  <a href="https://github.com/SunshineDaydeam/bamazon_pos" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                  <h6 class="btn btn-primary text-center"><a href="https://github.com/SunshineDaydeam/bamazon_pos" class="text-white" target="_blank">Go To Site</a></h6>
+              </div>
+          </div>
+          <div class="col-sm-4 col-md-3 p-0">
+              <div class="bg-white p-1">
+                  <h5 class="text-success gloria">Friend Finder</h5>
+                  <img src="/images/screenshots/friendfinder.png" alt="">
+                  <a href="https://github.com/SunshineDaydeam/FriendFinder" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                  <h6 class="btn btn-primary text-center"><a href="https://friend-finder-12034.herokuapp.com/" class="text-white" target="_blank">Go To Site</a></h6>
+              </div>
+          </div>
+          <div class="col-sm-4 col-md-3 p-0">
+              <div class="bg-white p-1">
+                  <h5 class="text-success gloria">Burger-App</h5>
+                  <a href="https://github.com/SunshineDaydeam/Burger-App" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                  <h6 class="btn btn-primary text-center"><a href="https://burger-app-.herokuapp.com/" class="text-white" target="_blank">Go To Site</a></h6>
+              </div>
+          </div>
+      </div>
+      
+      <h3 class=" mb-2" id="portGamesBtn">Games</h3>
+      <div class="row" id="gamesRow" data-state= "shown">  
+          <div class="col-sm-4 col-md-3 mb-3">
+              <div class="card bg-white border-dark p-3">
+                  <h5 class="gloria text-danger">Bunny Wars</h5>
+                  <img src="/images/screenshots/BunnyWars.png" alt="">
+                  <a href="https://github.com/SunshineDaydeam/Bunny-Wars-RPG" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                  <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/Bunny-Wars-RPG/" class="text-white" target="_blank">Play</a></h6>
+              </div>
+          </div>
+          <div class="col-sm-4 col-md-3 mb-3">  
+                  <div class="card bg-white border-dark p-3">
+                  <h5 class="text-danger gloria">Crystals</h5>
+                  <img src="/images/screenshots/Crystals.png" alt="">
+                  <a href="https://github.com/SunshineDaydeam/Crystal-Collector" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                  <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/Crystal-Collector/index.html" class="text-white" target="_blank">Go To Site</a></h6>
+              </div>
+          </div>
+          <div class="col-sm-4 col-md-3 mb-3">
+                  <div class="card bg-white border-dark p-3">
+                  <h5 class="text-danger gloria">Trivia Game</h5>
+                  <img src="assets/images/screenshots/NFLTrivia.png" alt="">
+                  <a href="https://github.com/SunshineDaydeam/Trivia-Game" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                  <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/Trivia-Game/" class="text-white" target="_blank">Go To Site</a></h6>
+              </div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+              <div class="card bg-white border-dark p-3">
+                  <h5 class="gloria text-danger">Hangman</h5>
+                  <img src="/images/screenshots/Hangman.png" alt="">
+                  <a href="https://github.com/SunshineDaydeam/Word_Guess_Game" target="_blank"><h6 class="link-Small mt-2">Git Hub Repository</h6></a>
+                  <h6 class="btn btn-primary text-center"><a href="https://sunshinedaydeam.github.io/Word_Guess_Game/index.html" class="text-white" target="_blank">Play</a></h6>
+              </div>
+          </div>
+      </div>
+      <h3 class=" mb-2" id="portSoftwareBtn">Software</h3>
+      <input type="file" name="image" id="imageLoad">
+      <button id="submitThis"></button>
+  </div>
+</div>
+<!-- End of Portfolio Page -->
+

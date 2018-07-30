@@ -5,9 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Alex Bruner Portfolio</title>
+  <!-- jQuery Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Moment Link -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Google Font Links -->
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-  <h1>Hello World</h1>
+  <!-- Nav Bar -->
+  <nav class="opaque navbar navbar-expand-md bg-white navbar-light border-bottom border-dark">
+    <div class="navbar-header">
+      <a class="navbar-brand lobster p-0"><h1>Alex Bruner</h1></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon navbar-right"></span>
+    </button>       
+    <div class="collapse navbar-collapse justify-content-end text-dark" id="navbarSupportedContent">
+      <ul class="nav navbar-nav navbar-right">
+        <a href="/"><li class="nav-item text-dark p-0 m-2 border-highlight-nav border-secondary" id="homeBtn">Home</li></a>
+        <a href="/about"><li class="nav-item text-dark p-0 m-2" id="aboutBtn">About</li></a>
+        <a href="/portfolio"><li class="nav-item text-dark p-0 m-2" id="portBtn">Portfolio</li></a>
+        <a href="/references"><li class="nav-item text-dark p-0 m-2" id ="referncesBtn">References</li></a>
+        <a href="/contact"><li class="nav-item text-dark p-0 m-2"id ="contactBtn">Contact</li></a>
+        <li class="mt-2 ml-2 mr-2"><a href = "https://github.com/SunshineDaydeam" target="_blank"><img src="/images/icons/Github-Black.png" class="p-0 img-small"></a>
+        <a href = "https://www.linkedin.com/in/alex-bruner-366348155/" target="_blank"><img src="/images/icons/linkedinBlack.png" class="p-0 img-small"></a> 
+        <a href = "https://stackoverflow.com/users/9510977/alex-bruner" target="_blank"><img src="/images/icons/StackBlack.png" class="p-0 img-small" ></a></li> 
+      </ul>                
+    </div>
+  </nav>
+    <!-- End of Nav Bar -->
+  <div class="container pt-10 pb-5">
   {{{body}}}
+  </div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="d-flex justify-content-center p-0 bg-dark border-top border-light">
+      <a href = "https://github.com/SunshineDaydeam" target="_blank"><img src="/images/icons/githubWhite.png" class="icon-link m-2"></a>
+      <a href = "https://www.linkedin.com/in/alex-bruner-366348155/" target="_blank"><img src="/images/icons/icons8-linkedin-50.png" class="icon-link m-2"></a>
+      <a href = "https://stackoverflow.com/users/9510977/alex-bruner" target="_blank"><img src="/images/icons/icons8-stack-overflow-filled-50.png" class="icon-link m-2" ></a>
+      <a href = "https://www.facebook.com/alex.d.bruner" target="_blank"><img src="/images/icons/icons8-facebook-50.png" class="icon-link m-2" ></a>
+    </div>
+    <div class="border-top border-dark opaque bg-white text-dark">
+      <p class="mb-0">This page is maintained by Alex Bruner. Copyright © 2018</p>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <!-- jQuery Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="/js/addReference.js"></script>
 </body>
 </html>

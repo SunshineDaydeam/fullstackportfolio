@@ -21,9 +21,18 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-// Routes
-// require("./routes/apiRoutes")(app);
+// API Routes
+require("./routes/api-comment")(app);
+// require("./routes/api-messages")(app);
+require("./routes/api-projects")(app);
+// require("./routes/api-users")(app);
+
+// HTML Routes
 require("./routes/htmlRoutes")(app);
+// require("./routes/html-comments")(app);
+// require("./routes/html-messages")(app);
+// require("./routes/html-projects")(app);
+// require("./routes/html-users")(app);
 
 // Run Server
 db.sequelize.sync().then(function(){

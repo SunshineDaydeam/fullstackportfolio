@@ -1,0 +1,88 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body{
+  position: relative;
+  padding-bottom: 3rem;
+  background-image: url("/images/IMG_1950.jpg");
+  min-height: 100%; 
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.navbar{
+  position:fixed;
+  width:100%;
+  z-index: 1000;
+}
+.pt-10{
+  padding-top: 9rem;
+}
+.mt-10{
+  margin-top: 4rem;
+}
+.lobster{font-family: 'Lobster', cursive;}
+.opaque{opacity: 0.9;}
+.opaque-2{
+background-color: none;}
+.container{z-index: 9999;}
+.borderTop {
+  border-top: 1px solid black;
+}
+.border-highlight-nav{
+  border-bottom: 5px solid green;
+}
+.footer {
+  font-size: 12px;
+  position: absolute;
+  
+  width: 100%;
+  bottom:0;
+  text-align: center;
+}
+.icon-link{ width: 28px; height: 28px;}
+.carousel-image{max-height: 400px;}
+
+.link-Small{font-size: 14px;}
+
+.gloria{font-family: 'Gloria Hallelujah', cursive;}
+
+#homeFace{
+  width: 150px;
+  height: 150px;
+}
+
+.max400{max-width: 380px;}
+
+.text-outline{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.inputArea{
+  width: 100%;
+}
+.img-circle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.img-small{
+  width: 36px;
+  height: auto;
+}
+.wideletter{
+  letter-spacing: 1px;
+}
+
+.nav-item{cursor: pointer;}

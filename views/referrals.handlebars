@@ -1,0 +1,80 @@
+<!-- References Page -->
+<div class="bg-light p-4 border rounded border-dark mb-2" id="referencePage">
+  <div class="border-bottom border-dark pb-1 mb-3 d-flex justify-content-between">
+    <h3 class="text-info">References</h3>
+    <button class="btn btn-secondary btn-small" data-toggle="modal" data-target="#exampleModalCenter"><b> + </b></button>
+  </div>
+  <p>See what clients, coworkers, and collaborators have to say about me.</p>
+
+
+  {{#each comments}}
+    <div class="card mb-2 rounded-0 p-3">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="row">
+            <div class="pt-2 col-4 col-sm-3 col-md-5">
+              <img src="{{image}}" class="img-circle	border border-dark" alt="">
+            </div>
+            <div class="col-8 col-sm-9 col-md-7">
+              <small class="mb-0 mt-0 pt-0 text-secondary"><b>{{name}}</b></small>
+              <small><p class="mb-0 pt-0">{{occupation}}, <b>{{company}}</b></p></small>
+              <small><p><i>{{location}}</i></p></small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-9">
+          <p class="bg-light p-2"><b><i>"{{message}}"</i></b></p>
+        </div>
+      </div>
+      <div class="mb-0 border-top">
+        <p class="mb-0"><small><i>Posted: {{createdAt}}</i></small></p>
+      </div>  
+    </div>
+  {{/each}}
+</div>
+<!-- End of References Page -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-info" id="exampleModalLongTitle">Recommend me!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-control border-0">
+          <p class="mb-0">Your Name</p>
+          <input id="refName" type="text" class="border-secondary bg-light text-dark p-1" style="min-width: 100%" placeholder="Your Name...">
+        </div>
+        <div class="form-control border-0">
+          <p class="mb-0">Your Occupation</p>
+          <input id="refOccupation" class="border-dark p-1 bg-light" style="min-width: 100%" placeholder="Your Job...">
+        </div>
+        <div class="form-control border-0">
+          <p class="mb-0">Your Company</p>
+          <input id="refCompany" class="border-dark p-1 bg-light" style="min-width: 100%" placeholder="Your Job...">
+        </div>
+        <div class="form-control border-0">
+          <p class="mb-0">Location</p>
+          <input id="refLocation" class="border-dark p-1 bg-light" style="min-width: 100%" placeholder="ex:Fellow Student at UT Coding Bootcamp...">
+        </div>
+        <div class="form-control border-0">
+          <p class="mb-0">Link to your picture</p>
+          <input id="refImageLink" type="text" class="border-secondary p-1 bg-light" style="min-width: 100%" placeholder="Link to your picture...">
+        </div>
+        <div class="form-control border-0">
+          <p class="mb-0">Your Message</p>
+          <textarea name="" class="border-dark p-1 bg-light" id="refMessage" rows="5" style="min-width: 100%" placeholder="Type Text Here..."></textarea>
+          <p class="mb-0"><small><i><span class="text-danger">*</span> Fake or anonymous recommendations will be deleted.</i></small></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="addReference" type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Post changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->

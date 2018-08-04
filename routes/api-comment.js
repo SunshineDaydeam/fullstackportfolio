@@ -17,5 +17,4 @@ module.exports = function(app) {
      res.json(dbComments);
     })
   })
-
 }

@@ -1,10 +1,25 @@
+
+
 require("dotenv").config();
 var express = require("express");
 var db = require("./models");
 var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
+// var mysql = require('mysql');
+// var connection;
 
+// if (process.env.JAWSDB_URL){
+//   connection = mysql.createConnection(process.env.JAWSDB_URL)
+// }else{
+//  connection = mysql.createConnection({
+//    host: 'localhost',
+//    user: 'root',
+//    password: 'root',
+//    database: 'portfolio_db'
+//  })
+// }
 var PORT = process.env.PORT || 3000;
+console.log(PORT)
 var app = express();
 
 // Middleware

@@ -1,33 +1,220 @@
 <!-- About Me Page -->
-<div class="bg-light p-4 border rounded border-dark" id="aboutPage">
-        <h3 class="border-bottom border-dark pb-1 mb-3 text-info">About Me</h3>
-    <div class="row">
-        <div class="col-12 col-md-5 col-lg-4 mt-1">
-            <div class="card rounded-0 border-dark">
-                <img class="card-img-top" src="/images/Marathon.jpg" alt="Card image cap">
-                <div class="card-body p-1">
-                    <p class="card-text text-muted"><i>With my mom after finishing the Phoenix Rock and Roll Marathon.</i></p>
-                </div>
-            </div>
+<div class="row">
+  {{!-- About --}}
+  <div class="col-lg-7">
+    <div class="bg-light p-4 mt-3 border rounded border-dark" id="aboutPage">
+      <h3 class="border-bottom border-dark pb-1 mb-3 text-info">About Me</h3>
+      <div class="row">
+        <div class="col-12 col-sm-3 col-md-3 col-lg-2 mt-1">
+          <div class="rounded-0 border-0 text-center">
+            <img class="card-img-top img-circle-md border border-dark" src="/images/myfacesquare.png" alt="Card image cap">
+            {{!-- <div class="card-body p-1">
+            </div> --}}
+          </div>
         </div>
-        <div class="col-12 col-md-7 col-lg-8 mt-1">
-            
-            <div class="row">
-                <div class="col-12">
-                    <p class="mb-0 font-weight-bold border-bottom border-dark"><i>About Me</i></p>
-                    <p>Alex Bruner is a web developer and graphic designer currently living in the Austin, TX area. He graduated from The Evergreen State College with a Bachelor's degree in music, and is currently attending the UT Austin Coding Bootcamp.</p>
-                    <p>Previously, Alex worked as a retail and commercial sales manager for a specialty exercise equipment dealership in Phoenix, Arizona.</p>
-                    <p>Alex is an fluent musician and lives with his faithful blue heeler, Remy. He is also an avid runner and has run the 2017 Phoenix Rock and Roll Marathon, as well as a handful of half-marathons.</p>
-                    <p class="mb-0 font-weight-bold border-bottom border-dark"><i>Education</i></p>
-                    <li>2018 University of Texas - Austin Coding Bootcamp</li>
-                    <li>2010 Bachelors of the Arts, The Evergreen State College</li>
-                    <br>
-                    <p class="mb-0 font-weight-bold border-bottom border-dark"><i>Software Proficiencies</i></p>
-                    <p>HTML, CSS, JavaScript, Swift, SQL, Max/MSP, Node, Firebase, GIT...</p>
-                </div>
-                
+        <div class="col-12 col-sm-9 col-md-9 col-lg-10 mt-1">     
+          <div class="row">
+            <div class="col-12">
+              <div class="bg-white p-2 border border-info rounded">
+                <p><b><u>Alex Bruner</u></b> is a web developer and graphic designer currently living in the Austin, TX area. He graduated from <b>The Evergreen State College</b> with a Bachelor's degree in music, and is currently attending the <b>UT Austin Coding Bootcamp.</b></p>
+                <p> Previously, Alex worked as a retail and commercial sales manager for a specialty exercise equipment dealership in Phoenix, Arizona.</p>
+                <p class="mb-0"> Alex is an fluent musician and lives with his faithful blue heeler, Remy. He is also an avid runner and has run the 2017 Phoenix Rock and Roll Marathon, as well as a handful of half-marathons.</p>                   
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+  {{!-- Education --}}
+  <div class="col-lg-5">
+    <div class="bg-light p-4 border rounded border-dark mt-3">
+      <h3 class="border-bottom border-dark pb-1 mb-3 text-info"><small class="font-weight-bold text-secondary">Education</small></h3>
+      <div class="row mt-3">
+        <div class="col-md-6 col-lg-12 mb-2">
+          <div class="bg-white p-2 rounded border border-info">
+            <div class="border-bottom mb-2">
+              <h5 class="font-weight-bold text-info mb-0">University of Texas</h5>
+              <p class="text-secondary mb-0"><i> Coding Bootcamp</i></p>
+            </div>
+            <ul>
+              <li><small> Certification: <b>Full-Stack Development</b></small></li>
+              <li><small>Location: <b>Austin, TX</b></small></li>
+              <li><small>Graduated: <b>September 19, 2018</b></small></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-12 pb-0">
+          <div class="bg-white p-2 rounded border border-info">
+            <div class="border-bottom mb-2">
+              <h5 class="font-weight-bold mb-0 text-info">The Evergreen State College</h5>
+              <p class="text-secondary mb-0"><i>Undergraduate Program</i></p>
+            </div>
+            <ul>           
+              <li><small> Degree: <b>Bachelor of Arts, Music</b></small></li>
+              <li><small>Location: <b>Olympia, WA</b></small></li>
+              <li><small>Graduated: <b>September, 2010</b></small></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- End of About Page -->
+{{!-- Software --}}
+<div class="row mb-5">
+  <div class="col-12">
+  <div class="bg-light p-4 mt-3 border rounded border-dark">
+    <h3 class="border-bottom border-dark pb-1 mb-3 text-info"><small class="font-weight-bold text-secondary">Software Proficiencies</small></h3>
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <ul class="bg-danger text-light rounded pt-2 pb-2 border border-dark opaque">
+            <li><small>HTML</small></li>
+            <li><small>CSS</small></li>
+            <li><small>Bootstrap</small></li>
+            <li><small>jQuery</small></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <ul class="bg-primary rounded pt-2 pb-2 border border-dark opaque">
+          <li><small>Javascript</small></li>
+          <li><small>PHP</small></li>
+          <li><small>Swift</small></li>
+          <li><small>Rest API</small></li>
+        </ul>    
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <ul class="text-light bg-success rounded pt-2 pb-2 border border-dark opaque">
+          <li><small>JSON</small></li>
+          <li><small>Node.js</small></li>
+          <li><small>Express</small></li>
+          <li><small>Handlebars</small></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <ul class="text-dark bg-warning rounded pt-2 pb-2 border border-dark opaque">
+          <li><small>mySQL</small></li>
+          <li><small>MongoDB</small></li>
+          <li><small>Cheerio NPM</small></li>
+          <li><small>Nightmare NPM</small></li>
+        </ul>
+      </div>
+    </div> 
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!-- <div class="bg-light p-4 border rounded border-dark" id="aboutPage">
+  <h3 class="border-bottom border-dark pb-1 mb-3 text-info">About Me</h3>
+  <div class="row">
+    <div class="col-12 col-sm-3 col-md-3 col-lg-2 mt-1">
+      <div class="rounded-0 border-0 text-center">
+        <img class="card-img-top img-circle-md border border-dark" src="/images/myfacesquare.png" alt="Card image cap">
+
+      </div>
+    </div>
+    <div class="col-12 col-sm-9 col-md-9 col-lg-10 mt-1">     
+      <div class="row">
+        <div class="col-12">
+          <div class="bg-white p-2 border border-info rounded">
+          <p><small><b><u>Alex Bruner</u></b> is a web developer and graphic designer currently living in the Austin, TX area. He graduated from <b>The Evergreen State College</b> with a Bachelor's degree in music, and is currently attending the <b>UT Austin Coding Bootcamp.</b></p>
+          <p>Previously, Alex worked as a retail and commercial sales manager for a specialty exercise equipment dealership in Phoenix, Arizona.</p>
+          <p class="mb-0">Alex is an fluent musician and lives with his faithful blue heeler, Remy. He is also an avid runner and has run the 2017 Phoenix Rock and Roll Marathon, as well as a handful of half-marathons.</small></p>                   
+        </div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-light p-4 border rounded border-dark mt-3 mb-5">
+  <div class="row">
+    <div class="col-12 mb-3">
+      <h3 class="border-bottom border-dark pb-1 mb-3 text-info"><small class="font-weight-bold text-secondary">Education</small></h3>
+      <div class="row mt-3">
+        <div class="col-md-6 mb-2">
+          <div class="bg-white p-2 rounded border border-info">
+            <div class="border-bottom mb-2">
+              <h5 class="font-weight-bold text-info mb-0">University of Texas</h5>
+              <p class="text-secondary mb-0"><i> Coding Bootcamp</i></p>
+            </div>
+            <ul>
+              <li><small> Certification: <b>Full-Stack Development</b></small></li>
+              <li><small>Location: <b>Austin, TX</b></small></li>
+              <li><small>Graduated: <b>September 19, 2018</b></small></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 mb-2">
+          <div class="bg-white p-2 rounded border border-info">
+            <div class="border-bottom mb-2">
+              <h5 class="font-weight-bold mb-0 text-info">The Evergreen State College</h5>
+              <p class="text-secondary mb-0"><i>Undergraduate Degree</i></p>
+            </div>
+            <ul>           
+              <li><small> Degree: <b>Bachelor of Arts, Music</b></small></li>
+              <li><small>Location: <b>Olympia, WA</b></small></li>
+              <li><small>Graduated: <b>September, 2010</b></small></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <h3 class="border-bottom border-dark pb-1 mb-3 text-info"><small class="font-weight-bold text-secondary">Software Proficiencies</small></h3>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <ul class="bg-white border border-danger rounded">
+            <li><small>HTML</small></li>
+            <li><small>CSS</small></li>
+            <li><small>Bootstrap</small></li>
+            <li><small>jQuery</small></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <ul class="bg-white border border-primary rounded">
+            <li><small>Javascript</small></li>
+            <li><small>PHP</small></li>
+            <li><small>Swift</small></li>
+            <li><small>Rest API</small></li>
+          </ul>    
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <ul class="bg-white border border-success rounded">
+            <li><small>JSON</small></li>
+            <li><small>Node.js</small></li>
+            <li><small>Express</small></li>
+            <li><small>Handlebars</small></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <ul class="bg-white border border-warning rounded">
+            <li><small>mySQL</small></li>
+            <li><small>MongoDB</small></li>
+            <li><small>Cheerio NPM</small></li>
+            <li><small>Nightmare NPM</small></li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div> --}}

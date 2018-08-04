@@ -13,7 +13,7 @@ $("#addReference").on("click", function(){
     return;
   }
 
-
+  
   $.ajax("/api/comments", {
     type: "POST",
     data: newComment
@@ -21,14 +21,6 @@ $("#addReference").on("click", function(){
     console.log(res);
     location.reload();
   });
-
-  // $.ajax({
-  //   url: "/api/comments",
-  //   method: "GET",
-  //   data: comments
-  // }).then(function (res) {
-  //   console.log(res);
-  // });
 
   $.ajax("/api/comments", {
     type: "GET"

@@ -29,6 +29,9 @@ body{
 .pt-10{
   padding-top: 9rem;
 }
+.pt-8{
+  padding-top: 7rem;
+}
 .mt-10{
   margin-top: 4rem;
 }
@@ -86,3 +89,35 @@ background-color: none;}
 }
 
 .nav-item{cursor: pointer;}
+
+.image200 {
+  max-height: 200px;
+}
+.image350 {
+  max-height: 350px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.img-circle-md {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+.text-pink {
+  color: pink;
+}

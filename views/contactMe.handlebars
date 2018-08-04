@@ -26,25 +26,26 @@
     <div class="d-flex justify-content-center">
         <a href="#contactMeForm"><button class="btn btn-lg btn-info" id="openContactBtn">Send Me a Message!</button></a> 
     </div>
-    <div class="d-none" id="contactMeForm">
+    <div class="d-none mt-3" id="contactMeForm" >
         <div class="row border-top border-dark pt-3">
             <div class="col-12 col-md-5 col-lg-4 mt-1">
                 <p class="mb-0 font-weight-bold">Name</p>
-                <input class="mb-2 inputArea border border-dark pl-2" type="text" placeholder="Your Name...">
+                <input class="mb-2 inputArea border border-dark pl-2" id="mesName" type="text" placeholder="Your Name...">
                 <p class="mb-0 font-weight-bold">Company</p>
-                <input class="mb-2 inputArea border border-dark pl-2" type="text" placeholder="Your Company Name...">
+                <input class="mb-2 inputArea border border-dark pl-2" id="mesComp" type="text" placeholder="Your Company Name...">
                 <p class="mb-0 font-weight-bold">Email</p>
-                <input class="mb-2 inputArea border border-dark pl-2" type="text" placeholder="Your Email...">
+                <input class="mb-2 inputArea border border-dark pl-2" id="mesEmail" type="email" placeholder="Your Email...">
                 <p class="mb-0 font-weight-bold">Subject of Message</p>
-                <input class="mb-2 inputArea border border-dark" type="text" id="subjectBox" placeholder="Subject...">
+                <input class="mb-2 inputArea border border-dark" type="text" id="mesSubj" placeholder="Subject...">
             </div>
             <div class="col-12 col-md-7 col-lg-8 mt-1">
                 <p class="mb-0 font-weight-bold">Your Message</p>
-                <textarea name="" id="" rows="10" class="inputArea border border-dark" placeholder="Type your message to me here..."></textarea>
+                <textarea name="" id="mesMessage" rows="10" class="inputArea border border-dark" placeholder="Type your message to me here..."></textarea>
             </div>
         </div>
         <div class="text-center">
-            <button class="btn btn-lg btn-success mt-3" id="sendBtn">Send This Message</button>
+            <button class="btn btn-lg btn-success mt-3" id="sendMesBtn">Send This Message</button>
+            <button class="btn btn-lg btn-danger mt-3" id="closeMesBtn">Close</button>
         </div>  
     </div>
 </div>

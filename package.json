@@ -1,0 +1,31 @@
+{
+  "name": "fullstackportfolio",
+  "version": "1.0.0",
+  "description": "This is my full stack Sequelize portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.38.0",
+    "sequelize-cli": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunshineDaydeam/fullstackportfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SunshineDaydeam/fullstackportfolio/issues"
+  },
+  "homepage": "https://github.com/SunshineDaydeam/fullstackportfolio#readme"
+}

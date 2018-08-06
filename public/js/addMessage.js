@@ -16,9 +16,6 @@ $("#sendMesBtn").on("click", function(){
     subject: $("#mesSubj").val().trim(),
     message: $("#mesMessage").val().trim()
   }
-  // if (newMessage.name.email.length<6 && newMessage.message.length<20){
-  //   return;
-  // }
 
   $.ajax("/api/messages", {
     type: "POST",
@@ -28,11 +25,4 @@ $("#sendMesBtn").on("click", function(){
     location.reload();
     alert("Your message has been sent.")
   });
-
-  // $.ajax("/api/comments", {
-  //   type: "GET"
-  // }).then(function(comment) {
-  //   // console.log(comment);
-  //   return comment;
-  // });
 })

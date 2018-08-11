@@ -1,15 +1,15 @@
 <!-- References Page -->
 <div class="bg-light p-4 border rounded border-dark mb-2 mb-5" id="referencePage">
-  <div class="border-bottom border-dark pb-1 mb-3 d-flex justify-content-between">
-    <h3 class="text-info">References</h3>
-    <h3 class="" data-toggle="modal" data-target="#exampleModalCenter"><i class="far fa-plus-square font-weight-bold text-primary"></i>	
-</h3>
+  <div class="border-bottom border-dark pb-1 mb-3 d-flex">
+    <h3 class="text-info mr-auto">References</h3>
+    <a href="/updateMyComments"><h3 class="mr-3 text-secondary" id="editComment"><i class="fas fa-edit"></i></h3></a>
+    <h3 class="" data-toggle="modal" data-target="#exampleModalCenter"><i class="far fa-plus-square font-weight-bold text-primary"></i></h3>
   </div>
-  <p>See what clients, coworkers, and collaborators have to say about me.</p>
+  <p>See what teachers, clients, coworkers, and collaborators have to say about me.</p>
 
 
   {{#each comments}}
-    <div class="card mb-2 rounded-0 p-3">
+    <div class="card mb-2 rounded-0 p-3" data-id="{{id}}">
       <div class="row">
         <div class="col-12 col-md-4 col-lg-3">
           <div class="row">

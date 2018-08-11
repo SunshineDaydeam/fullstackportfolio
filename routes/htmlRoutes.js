@@ -35,6 +35,21 @@ module.exports = function(app) {
       });  
     })
   });
+  // Update Rederence Page
+  app.get("/updateMyComments", function(req, res){
+    db.comment.findAll(
+      {
+        where: {
+          // **** CHANGE WITH COOKIES ***+
+          id: 1
+        }
+      }
+    ).then(function(myComment){
+      res.render("updateCommentPage", {
+        comments: myComment
+      })
+    })  
+  })
 
   // Admin Page
   // * Add/Edit Projects
@@ -46,9 +61,9 @@ module.exports = function(app) {
     });
   });
 
-  app.get("*", function(req, res){
-    res.render("home", {
+  // app.get("*", function(req, res){
+  //   res.render("home", {
 
-    });
-  })
+  //   });
+  // })
 };
